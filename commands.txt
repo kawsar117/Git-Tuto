@@ -1,0 +1,15 @@
+
+after commiting done add: 
+
+ssh-keygen -t rsa -b 4096 -C "kawsar117@gmail.com"
+
+name a key: git_keys
+enter a passphrase: 123
+retype: 123
+
+eval $(ssh-agent -s)
+now will get a agent pid
+
+ssh-add ~/.ssh/id_rsa
+
+clip < ~/.ssh/id_rsa.pub
